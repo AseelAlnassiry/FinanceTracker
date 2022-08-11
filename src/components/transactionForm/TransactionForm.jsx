@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import { useFirestore } from '../../hooks/useFirestore';
 
-const TransactionForm = (uid) => {
+const TransactionForm = ({uid}) => {
   const [name, setName] = useState('');
   const [amount, setAmount] = useState('');
 
